@@ -1,0 +1,71 @@
+/*Overrides for the Tech Writer Portfolio*/
+/*This is where I've defined rules that modify the default Bootstrap CSS*/
+
+
+/*Added this bit to add some padding for description divs*/
+.description {
+  padding-bottom: 0px;
+  padding-top: 50px;
+}
+
+
+/*Adding this for extra padding for the blog page, since I got rid of padding for the page-content div*/
+.blog-page-spacing {
+  padding-top: 60px;
+}
+/*You can change this hex value to change the header background color*/
+header {
+  background: #e5e5e5;
+}
+
+/*You can change this hex value to change the body background color*/
+body {
+  background: #e5e5e5;
+  padding-top: 60px;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 125px;
+}
+
+.jumbotron {
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+.jumbotron .h1, .jumbotron h1 {
+  font-family: 'Baloo Bhai', cursive;
+
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Sticky footer styles copied from the sticky-footer.css example file
+-------------------------------------------------- */
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
