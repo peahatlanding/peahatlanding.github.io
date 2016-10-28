@@ -2,13 +2,6 @@
   <div class="container">
     <p>
       <h2 class="footer-heading">{{ site.title }}</h2>
-        <div class="col-sm-3">
-
-          <ul class="contact-list">
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          </ul>
-        </div>
-
         <div class="col-sm-4">
           <ul class="social-media-list">
             {% if site.github_username %}
@@ -23,9 +16,10 @@
             </li>
             {% endif %}
           </ul>
+
         </div>
 
-        <div class="col-sm-5">
+        <div class="col-sm-8">
           <p>{{ site.description }}</p>
         </div>
 
