@@ -1,0 +1,64 @@
+---
+layout: post
+comments: false
+title:  "API Reference"
+date:   2016-10-29 06:36:17 -0400
+---
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand"><a href="#">Home</a></li>
+            <li><a href="#">Another link</a></li>
+            <li><a href="#">Next link</a></li>
+            <li><a href="#">Last link</a></li>
+        </ul>
+    </div>
+    <div id="page-content-wrapper">
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- content of page -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+#Search Invitations and Feedback
+
+##Search Customer Endpoint
+
+```
+/app/customers/_search{?offset=0&limit=50}
+```
+Searches through your feedback and returns up to 50 records at a time.
+
+##Search Responses Endpoint
+
+```
+/app/responses/_search{?offset=0&limit=50}
+```
+Searches through your feedback and returns up to 50 records at a time.
+
+##Optional Query Parameters
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+If you expect more than 50 records, you can optionally add the following parameters to paginate your search results.
+| Name          | Required/Optional| Description  |
+| ------------- |:-------------:| -----:|
+| limit
+number          | Optional      | The maximum number of records returned per response. This is capped at 100. If you pass a value larger than 100, we will still return only up to 100 records at a time.  If not included, the limit will default to 50 records. |
+| offset
+number      | Optional      |   Offset determines which set of records is returned in case of pagination. For example, if you make a request for the first 100 records, you should offset your next request by 100 so you can get responses 100-199 in your next response.  If not included, the offset will default to 0, which denotes the first set of records. |
