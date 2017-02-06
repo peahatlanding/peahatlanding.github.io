@@ -3,6 +3,7 @@ layout: post
 comments: true
 title:  "Website Launch!"
 date:   2016-10-28 06:36:17 -0400
+preview: My site has officially launched!! Which is to say that I’ve gone from keeping it a secret to casually shrugging and mumbling, "Sure, you can look if you want but I still have a lot to add..."
 ---
 My site has officially launched!! Which is to say that I’ve gone from keeping it a secret to casually shrugging and mumbling, "Sure, you can look if you want but I still have a lot to add..."
 
