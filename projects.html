@@ -16,9 +16,10 @@ layout: default
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html">Home</a></li><!--About page-->
+          <li><a href="portfolio.html">Writing Samples</a></li>
+          <li class="active"><a href="projects.html">Coding Projects</a></li>
+
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -29,17 +30,44 @@ layout: default
     <div class="container">
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-          <h1>Personal Projects</h1>
-          <img class="img-rounded" src="me.jpeg">
-          <p>Coming Soon!</p>
+          <h1>Coding Projects</h1>
+          <p>Here's what I like to work on in my free time. I like projects that unite my interest in technology and art.</p>
       </div><!--end jumbotron-->
 
       <!-- Titles and descriptions of your samples.
            Change the titles, descriptions, and button text.
       -->
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-12 description">
+          <a name="creditcard"></a>
+          <h2>Credit Card Validator</h2>
+          <img src="/images/ccimage.png">
+          <p>A credit card number validator that gets increasingly angry as you enter invalid numbers.</p>
+          <p><a class="btn btn-default" href="/projects/creditcard.html" role="button">Try it out! &raquo;</a> <a class="btn btn-default" href="/projects/creditcardcode.html" role="button">Look at the code &raquo;</a></p>
         </div>
+      </div><!-- Credit Card Validator row -->
+
+      <div class="row">
+        <div class="col-md-12 description">
+          <a name="webcomictheme"></a>
+          <h2>Plain Webcomic Theme for Jekyll</h2>
+          <img src="/images/webcomic.png">
+          <p>A plain webcomic theme for Jekyll! I thought Jekyll and Github Pages could be a great free hosting solution for webcomics.
+              So I made this plain webcomic theme and am working on a guide for beginner- or -non-coders on how to use the theme. </p>
+          <p><a class="btn btn-default" href="https://peahatlanding.github.io/Plain-Webcomic/" role="button">Live Demo! &raquo;</a> <a class="btn btn-default" href="https://peahatlanding.github.io/Plain-Webcomic/docs/index.html" role="button">User Guide &raquo;</a></p>
+        </div>
+      </div><!-- Webcomic Theme row -->
+
+      <div class="row">
+        <div class="col-md-12 description">
+          <a name="truckgame"></a>
+          <h2>The Truck Game</h2>
+          <img src="/images/truckgame.png">
+          <p>A glamorous and exciting game where you drive around a field and pick up loose packages. Made with the Unity 3D game engine and C#</p>
+          <p><a class="btn btn-default" href="/projects/truckgame.html" role="button">Read More &raquo;</a></p>
+        </div>
+      </div><!-- The Truck Game row -->
+
       </div>
     </div>
 

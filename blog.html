@@ -16,7 +16,8 @@ layout: default
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li><!--About page-->
         <li><a href="portfolio.html">Writing Samples</a></li>
-        <li class="active"><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html">Coding Projects</a></li>
+
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -34,9 +35,9 @@ layout: default
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
           <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            {{ post.title }}
           </h2>
-          {{ post.preview }}
+          {{ post.content}}
         </li>
       {% endfor %}
     </ul>
